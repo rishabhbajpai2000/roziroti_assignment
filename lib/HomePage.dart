@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:roziroti_assignment/reusbableWidgets.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -12,12 +13,12 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             Row(children: [
-              CircleAvatar(
+              const CircleAvatar(
                 radius: 20, // Image radius
                 backgroundImage: AssetImage("assets/image.jpeg"),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
+              const Padding(
+                padding: EdgeInsets.all(8.0),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -31,19 +32,19 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               Expanded(child: Container()),
-              Icon(
+              const Icon(
                 Icons.notifications_none_outlined,
                 size: 30,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 10,
               ),
-              Icon(
+              const Icon(
                 Icons.heart_broken_outlined,
                 size: 30,
               ),
             ]),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
@@ -53,8 +54,8 @@ class HomePage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(20),
                 color: Colors.white,
               ),
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
+              child: const Padding(
+                padding: EdgeInsets.all(8.0),
                 child: Row(
                   children: [
                     Icon(Icons.search),
@@ -66,23 +67,23 @@ class HomePage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
               children: [
-                Text(
+                const Text(
                   "Special Offers",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 Expanded(child: Container()),
-                Text(
+                const Text(
                   "See All",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Container(
@@ -91,10 +92,10 @@ class HomePage extends StatelessWidget {
 
               child: Image.asset("assets/carausal.png"),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            Row(
+            const Row(
               children: [
                 CatagoryTag(icon: Icons.local_laundry_service, text: "Laundry",),
                 CatagoryTag(icon: Icons.local_laundry_service, text: "Shoes",),
@@ -103,7 +104,7 @@ class HomePage extends StatelessWidget {
               ],
             ),
 
-            Row(
+            const Row(
               children: [
                 CatagoryTag(icon: Icons.watch, text: "Watch",),
                 CatagoryTag(icon: Icons.diamond_outlined, text: "Jewelry",),
@@ -111,26 +112,26 @@ class HomePage extends StatelessWidget {
                 CatagoryTag(icon: Icons.toys_outlined, text: "Toys",),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
             Row(
               children: [
-                Text(
+                const Text(
                   "Most Popular",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 Expanded(child: Container()),
-                Text(
+                const Text(
                   "See All",
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            Row(
+            const Row(
               children: [
                 MostPopularTags(text: "All",),
                 MostPopularTags(text: "Clothes",),
@@ -142,61 +143,5 @@ class HomePage extends StatelessWidget {
         ),
       ),
     ));
-  }
-}
-
-class MostPopularTags extends StatelessWidget {
-  final text;
-  const MostPopularTags({
-    super.key,
-    required this.text
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(5.0),
-      child: Container(
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(20),border: Border.all(color: Colors.black),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(20, 10, 20, 10),
-          child: Text(this.text),
-        ),
-      ),
-    );
-  }
-}
-
-class CatagoryTag extends StatelessWidget {
-  final icon;
-  final text;
-
-  const CatagoryTag({
-    super.key,
-    required this.icon,
-    required this.text,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.all(12.0),
-      child: Column(
-        children: [
-          CircleAvatar(
-            backgroundColor: Colors.grey,
-            radius: 30,
-            child: Icon(this.icon, color: Colors.black, size: 30,),
-          ),
-
-          SizedBox(
-            height: 10,
-          ),
-          Text(this.text, style: TextStyle(fontWeight: FontWeight.bold),),
-        ],
-      ),
-    );
   }
 }

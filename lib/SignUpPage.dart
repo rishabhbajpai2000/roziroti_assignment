@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:roziroti_assignment/Accounts.dart';
-import 'package:roziroti_assignment/Navigationbart.dart';
+import 'package:roziroti_assignment/ProfilePage.dart';
+
 
 class SignUpPage extends StatelessWidget {
   const SignUpPage({super.key});
@@ -12,7 +12,7 @@ class SignUpPage extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.all(20.0),
           child: Column(children: [
-            Row(
+            const Row(
               children: [
                 Icon(
                   Icons.arrow_back,
@@ -20,19 +20,19 @@ class SignUpPage extends StatelessWidget {
                 ),
               ],
             ),
-           SizedBox(height: 70,),
-            Text(
+           const SizedBox(height: 70,),
+            const Text(
               "Create your Account",
               style: TextStyle(fontSize: 50, fontWeight: FontWeight.bold),
             ),
-           SizedBox(height: 70,),
-            TextField(
+           const SizedBox(height: 70,),
+            const TextField(
               decoration: InputDecoration(
                   border: InputBorder.none,
                   icon: Icon(Icons.email),
                   hintText: "Email"),
             ),
-            TextField(
+            const TextField(
               decoration: InputDecoration(
                   icon: Icon(Icons.lock),
                   border: InputBorder.none,
@@ -45,7 +45,7 @@ class SignUpPage extends StatelessWidget {
                   ),
                   value: false,
                   onChanged: (value) {}),
-              Text(
+              const Text(
                 "Remember me",
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
@@ -54,7 +54,7 @@ class SignUpPage extends StatelessWidget {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => AccountPage()),
+                  MaterialPageRoute(builder: (context) => const AccountPage()),
                 );
               },
               child: Container(
@@ -63,8 +63,8 @@ class SignUpPage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(20),
                   color: Colors.black,
                 ),
-                child: Padding(
-                  padding: const EdgeInsets.all(15.0),
+                child: const Padding(
+                  padding: EdgeInsets.all(15.0),
                   child: Text(
                     "Sign Up",
                     textAlign: TextAlign.center,
@@ -73,14 +73,14 @@ class SignUpPage extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            Text("Or continue with ", style: TextStyle(fontWeight: FontWeight.bold),),
-            SizedBox(
+            const Text("Or continue with ", style: TextStyle(fontWeight: FontWeight.bold),),
+            const SizedBox(
               height: 50,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                Icon(Icons.facebook, size: 50,),
@@ -88,17 +88,17 @@ class SignUpPage extends StatelessWidget {
                 Icon(Icons.apple, size: 50,),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text("Already have an account?"),
                 Text("Sign In", style: TextStyle(fontWeight: FontWeight.bold),),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 50,
             ),
           ]),

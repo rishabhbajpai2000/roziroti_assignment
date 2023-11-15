@@ -14,14 +14,14 @@ class AccountPage extends StatelessWidget {
         children: [
           Row(
             children: [
-              Icon(
+              const Icon(
                 Icons.circle_outlined,
                 size: 30,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 15,
               ),
-              Text(
+              const Text(
                 "Profile",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
               ),
@@ -32,10 +32,10 @@ class AccountPage extends StatelessWidget {
                     borderRadius: BorderRadius.circular(20),
                     color: Colors.white,
                   ),
-                  child: Icon(Icons.more_horiz))
+                  child: const Icon(Icons.more_horiz))
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Column(
@@ -45,50 +45,50 @@ class AccountPage extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomePage()),
+                    MaterialPageRoute(builder: (context) => const HomePage()),
                   );
                 },
-                child: CircleAvatar(
+                child: const CircleAvatar(
                   radius: 70, // Image radius
                   backgroundImage: AssetImage("assets/image.jpeg"),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 20,
               ),
-              Text(
+              const Text(
                 "Andrew Ainsley",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Text(
+              const Text(
                 "+1 111 467 378 399",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 10),
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.person_outline_rounded,
                   size: 20,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
-                Text(
+                const Text(
                   "Edit Profile",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Expanded(child: Container()),
-                Icon(Icons.arrow_forward_ios, size: 20,)
+                const Icon(Icons.arrow_forward_ios, size: 20,)
               ],
             ),
           ),
@@ -96,19 +96,19 @@ class AccountPage extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.location_on_outlined,
                   size: 20,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
-                Text(
+                const Text(
                   "Address ",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Expanded(child: Container()),
-                Icon(Icons.arrow_forward_ios, size: 20,)
+                const Icon(Icons.arrow_forward_ios, size: 20,)
               ],
             ),
           ),
@@ -116,19 +116,19 @@ class AccountPage extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.notifications_none_outlined,
                   size: 20,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
-                Text(
+                const Text(
                   "Notification ",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Expanded(child: Container()),
-                Icon(Icons.arrow_forward_ios, size: 20,)
+                const Icon(Icons.arrow_forward_ios, size: 20,)
               ],
             ),
           ),
@@ -136,19 +136,19 @@ class AccountPage extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.wallet_outlined,
                   size: 20,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
-                Text(
+                const Text(
                   "Payment",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Expanded(child: Container()),
-                Icon(Icons.arrow_forward_ios, size: 20,)
+                const Icon(Icons.arrow_forward_ios, size: 20,)
               ],
             ),
           ),
@@ -156,19 +156,19 @@ class AccountPage extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.security_outlined,
                   size: 20,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
-                Text(
+                const Text(
                   "Security",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Expanded(child: Container()),
-                Icon(Icons.arrow_forward_ios, size: 20,)
+                const Icon(Icons.arrow_forward_ios, size: 20,)
               ],
             ),
           ),
@@ -176,19 +176,19 @@ class AccountPage extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.language_outlined,
                   size: 20,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
-                Text(
+                const Text(
                   "Language",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Expanded(child: Container()),
-                Icon(Icons.arrow_forward_ios, size: 20,)
+                const Icon(Icons.arrow_forward_ios, size: 20,)
               ],
             ),
           ),
@@ -196,19 +196,19 @@ class AccountPage extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.remove_red_eye_outlined,
                   size: 20,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
-                Text(
+                const Text(
                   "Dark Mode",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Expanded(child: Container()),
-                Icon(Icons.arrow_forward_ios, size: 20,)
+                const Icon(Icons.arrow_forward_ios, size: 20,)
               ],
             ),
           ),
@@ -216,19 +216,19 @@ class AccountPage extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.lock_outlined,
                   size: 20,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
-                Text(
+                const Text(
                   "Privacy Policy",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Expanded(child: Container()),
-                Icon(Icons.arrow_forward_ios, size: 20,)
+                const Icon(Icons.arrow_forward_ios, size: 20,)
               ],
             ),
           ),
@@ -236,19 +236,19 @@ class AccountPage extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.help_outline_outlined,
                   size: 20,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
-                Text(
+                const Text(
                   "Help Center",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Expanded(child: Container()),
-                Icon(Icons.arrow_forward_ios, size: 20,)
+                const Icon(Icons.arrow_forward_ios, size: 20,)
               ],
             ),
           ),
@@ -256,19 +256,19 @@ class AccountPage extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.share_outlined,
                   size: 20,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
-                Text(
+                const Text(
                   "Invite Friends",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 Expanded(child: Container()),
-                Icon(Icons.arrow_forward_ios, size: 20,)
+                const Icon(Icons.arrow_forward_ios, size: 20,)
               ],
             ),
           ),
@@ -276,15 +276,15 @@ class AccountPage extends StatelessWidget {
             padding: const EdgeInsets.all(10.0),
             child: Row(
               children: [
-                Icon(
+                const Icon(
                   Icons.logout_outlined,
                   size: 20,
                   color: Colors.red,
                 ),
-                SizedBox(
+                const SizedBox(
                   width: 15,
                 ),
-                Text(
+                const Text(
                   "Logout",
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.red),
                 ),
