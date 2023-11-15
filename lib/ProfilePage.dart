@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:roziroti_assignment/HomePage.dart';
+import 'package:roziroti_assignment/reusbableWidgets.dart';
 
 class AccountPage extends StatelessWidget {
   const AccountPage({super.key});
@@ -72,206 +73,44 @@ class AccountPage extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Row(
-              children: [
-                const Icon(
-                  Icons.person_outline_rounded,
-                  size: 20,
-                ),
-                const SizedBox(
-                  width: 15,
-                ),
-                const Text(
-                  "Edit Profile",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                Expanded(child: Container()),
-                const Icon(Icons.arrow_forward_ios, size: 20,)
-              ],
-            ),
+          const profileSettingEditTag(
+            text: "Edit Profile",
+            icon: Icons.person_outline_rounded,
           ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Row(
-              children: [
-                const Icon(
-                  Icons.location_on_outlined,
-                  size: 20,
-                ),
-                const SizedBox(
-                  width: 15,
-                ),
-                const Text(
-                  "Address ",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                Expanded(child: Container()),
-                const Icon(Icons.arrow_forward_ios, size: 20,)
-              ],
-            ),
+          const profileSettingEditTag(
+            text: "Address",
+            icon: Icons.location_on_outlined,
           ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Row(
-              children: [
-                const Icon(
-                  Icons.notifications_none_outlined,
-                  size: 20,
-                ),
-                const SizedBox(
-                  width: 15,
-                ),
-                const Text(
-                  "Notification ",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                Expanded(child: Container()),
-                const Icon(Icons.arrow_forward_ios, size: 20,)
-              ],
-            ),
+          const profileSettingEditTag(
+            text: "Notification",
+            icon: Icons.notifications_none_outlined,
           ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Row(
-              children: [
-                const Icon(
-                  Icons.wallet_outlined,
-                  size: 20,
-                ),
-                const SizedBox(
-                  width: 15,
-                ),
-                const Text(
-                  "Payment",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                Expanded(child: Container()),
-                const Icon(Icons.arrow_forward_ios, size: 20,)
-              ],
-            ),
+          const profileSettingEditTag(
+            text: "Payment",
+            icon: Icons.wallet_outlined,
           ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Row(
-              children: [
-                const Icon(
-                  Icons.security_outlined,
-                  size: 20,
-                ),
-                const SizedBox(
-                  width: 15,
-                ),
-                const Text(
-                  "Security",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                Expanded(child: Container()),
-                const Icon(Icons.arrow_forward_ios, size: 20,)
-              ],
-            ),
+          const profileSettingEditTag(
+            text: "Security",
+            icon: Icons.security_outlined,
           ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Row(
-              children: [
-                const Icon(
-                  Icons.language_outlined,
-                  size: 20,
-                ),
-                const SizedBox(
-                  width: 15,
-                ),
-                const Text(
-                  "Language",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                Expanded(child: Container()),
-                const Icon(Icons.arrow_forward_ios, size: 20,)
-              ],
-            ),
+          const profileSettingEditTag(
+            text: "Language",
+            icon: Icons.language_outlined,
           ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Row(
-              children: [
-                const Icon(
-                  Icons.remove_red_eye_outlined,
-                  size: 20,
-                ),
-                const SizedBox(
-                  width: 15,
-                ),
-                const Text(
-                  "Dark Mode",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                Expanded(child: Container()),
-                const Icon(Icons.arrow_forward_ios, size: 20,)
-              ],
-            ),
+          const profileSettingEditTag(
+            text: "Dark Mode",
+            icon: Icons.remove_red_eye_outlined,
           ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Row(
-              children: [
-                const Icon(
-                  Icons.lock_outlined,
-                  size: 20,
-                ),
-                const SizedBox(
-                  width: 15,
-                ),
-                const Text(
-                  "Privacy Policy",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                Expanded(child: Container()),
-                const Icon(Icons.arrow_forward_ios, size: 20,)
-              ],
-            ),
+          const profileSettingEditTag(
+            text: "Privacy Policy",
+            icon: Icons.lock_outline,
           ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Row(
-              children: [
-                const Icon(
-                  Icons.help_outline_outlined,
-                  size: 20,
-                ),
-                const SizedBox(
-                  width: 15,
-                ),
-                const Text(
-                  "Help Center",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                Expanded(child: Container()),
-                const Icon(Icons.arrow_forward_ios, size: 20,)
-              ],
-            ),
+          const profileSettingEditTag(
+            text: "Help Center",
+            icon: Icons.help_outline,
           ),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Row(
-              children: [
-                const Icon(
-                  Icons.share_outlined,
-                  size: 20,
-                ),
-                const SizedBox(
-                  width: 15,
-                ),
-                const Text(
-                  "Invite Friends",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-                ),
-                Expanded(child: Container()),
-                const Icon(Icons.arrow_forward_ios, size: 20,)
-              ],
-            ),
-          ),
+          const profileSettingEditTag(
+              text: "Invite Friends", icon: Icons.share_outlined),
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Row(
@@ -286,10 +125,12 @@ class AccountPage extends StatelessWidget {
                 ),
                 const Text(
                   "Logout",
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.red),
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.red),
                 ),
                 Expanded(child: Container()),
-
               ],
             ),
           )
